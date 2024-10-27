@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SMART INVENTORY AND SALES MANAGEMENT SYSTEM </title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons/bootstrap-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <aside class="left">
+            <header>
+                <div class="logo">
+                    <img src="assets/images/logo_x.png" alt="logo" width="180">
+                </div>
+            </header>
+            <nav class="left-navigation">
+                <ul>
+                    <li class="active"><a href="#"><i class="bi bi-house-door"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="bi bi-box"></i> Inventory</a></li>
+                    <li><a href="#"><i class="bi bi-cash"></i> Sales</a></li>
+                    <li><a href="#"><i class="bi bi-people"></i> Customers</a></li>
+                    <li><a href="#"><i class="bi bi-gear"></i> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="right">
+
+            <div class="main-content">
+
+
+                <div class="container full">
+
+                    <header>
+                        <nav class="top-navigation">
+
+                            <div class="left">
+
+                                <a href="javascript:void(0)" class="input">
+                                    <span class="input-wrap user-profile">
+                                        <span class="icon">
+                                            <img src="assets/images/user.jpg" alt="user" width="40">
+                                        </span>
+                                        <span class="title">John Doe</span>
+                                        <span class="input-icon">
+                                            <i class="bi-chevron-down"></i>
+                                        </span>
+                                    </span>
+                                </a>
+
+                                <form class="search" method="get" action="" onsubmit="return false">
+                                    <input type="search" name="search" placeholder="Search..."/>
+                                    <i class="bi bi-search"></i>
+                                </form>
+
+                            </div>
+                            <div class="right">
+
+                                
+                                <a href="javascript:void(0)" class="input">
+                                    <span class="input-wrap highlight">
+                                        <span class="title">Add stock</span>
+                                        <span class="input-icon">
+                                            <i class="bi-plus"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                                
+                                <a href="javascript:void(0)" class="input">
+                                    <span class="input-wrap highlight">
+                                        <span class="input-icon">
+                                            <i class="bi-bell"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </nav>
+                    </header>
+
+
+                    <div class="content">
+
+                        <h1 class="text-size-lg m-0 pt-20">Dashboard</h1>
+                    </div>
+                    
+                    <div class="main-actions pt-20">
+
+                        <div class="left">
+
+                            <div class="card">
+                                <span class="icon">
+                                    <i class="bi bi-people"></i>
+                                </span>
+                                <h4 class="title">Total customers</h4>
+                                <div class="label">
+                                    400
+                                    <span class="status"><i class="bi bi-arrow-up"></i> +5.0%</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span class="icon">
+                                    <i class="bi bi-person-plus"></i>
+                                </span>
+                                <h4 class="title">New customers</h4>
+                                <div class="label">
+                                    15
+                                    <span class="status up"><i class="bi bi-arrow-up"></i> +2.5%</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span class="icon">
+                                    <i class="bi bi-bezier"></i>
+                                </span>
+                                <h4 class="title">Sales Lost</h4>
+                                <div class="label">
+                                    ₦60,000
+                                    <span class="status down"><i class="bi bi-arrow-down"></i> -2.5%</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span class="icon">
+                                    <i class="bi bi-bezier2"></i>
+                                </span>
+                                <h4 class="title">Week Sales</h4>
+                                <div class="label">
+                                    ₦700,000
+                                    <span class="status up"><i class="bi bi-arrow-up"></i> +1.2%</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span class="icon">
+                                    <i class="bi bi-box2"></i>
+                                </span>
+                                <h4 class="title">Total Stocks</h4>
+                                <div class="label">
+                                    9500
+                                    <span class="status down"><i class="bi bi-arrow-down"></i> -5.1%</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span class="icon">
+                                    <i class="bi bi-box-seam"></i>
+                                </span>
+                                <h4 class="title">Socks soled</h4>
+                                <div class="label">
+                                    500
+                                    <span class="status up"><i class="bi bi-arrow-up"></i> +2.5%</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="right">
+
+                            <div class="card">
+                                <h4 class="m-0 p-5">Invoice, Quote & Sales Order</h4>
+                                <canvas id="analyticChart" width="400" height="200"></canvas>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+    </div>
+    
+
+    <script src="analytics.js"></script>
+</body>
+</html>
